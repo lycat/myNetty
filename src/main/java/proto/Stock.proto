@@ -1,0 +1,13 @@
+syntax = "proto3";
+package proto;
+option java_outer_classname="Stock";
+
+message StockDef {
+    string stockId = 1;
+    int32 price = 2;
+}
+
+message ReturnMsg {
+    string msgId = 1;
+    string msgContent = 2;
+}
